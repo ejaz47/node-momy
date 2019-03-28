@@ -1,5 +1,5 @@
 # node-momy 
-## node (vanilla js) + monogo + mysql
+## node (vanilla js) + mongo + mysql
 
 A simple **node.js** (vanilla javascript, no typescript) boilerplate with **Mongo db** and **Mysql**.
 
