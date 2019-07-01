@@ -1,4 +1,9 @@
 
+access.log
+
+# environment variables .env file
+.env
+
 # compiled output
 /dist
 /tmp
