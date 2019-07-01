@@ -10,7 +10,9 @@ Although NoSQL databases have gained popularity for their speed and scalability,
 Clone or download this repo and run command in root dir
 > **npm install**
 
-Configure **mongo db** and **mysql db** in **./config.js** file
+Configure **mongo db** and **mysql db** in **.env.dev** file
+**Note: Make sure mongoDB and Mysql is running.**
+
 Thats it.
 
 ##  Run
