@@ -17,7 +17,7 @@ const product = require('./app/product'); // Imports routes for the products
 /**
  * Load environment variables from .env file.
  */
-const dotenv = require('dotenv').config({ path: process.env.pro ? '.env.pro' : '.env.dev' });
+const dotenv = require('dotenv').config({ path: process.env.pro ? '.env' : '.env.dev' });
 const log = require('Debug')('app');
 
 log(process.env.pro ? chalk.red('Production Mode') : chalk.yellow('Development Mode'));

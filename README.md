@@ -30,7 +30,7 @@ To start app in default development mode:
 To start in production mode:
 > **pro=true nodemon server.js**
 
-
+**Note: before running in pro mode make sure to create .env file containing production details.**
 ##  MIT License
 
 **Copyright (c) 2019 Ejaz Ansari**
