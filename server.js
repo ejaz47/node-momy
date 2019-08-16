@@ -7,19 +7,19 @@ const morgan = require('morgan');
 const path = require('path');
 const mongoose = require('mongoose');
 const fs = require('fs');
-const dotenv = require('dotenv');
 const chalk = require('chalk');
 const cors = require('cors');
 const app = express();
 const auth = require('./app/auth');
 const auth_controller = require('./app/auth/auth_controller');
 const product = require('./app/product'); // Imports routes for the products
-const log = require('Debug')('app:log');
 
 /**
  * Load environment variables from .env file.
  */
-dotenv.config({ path: process.env.pro ? '.env.pro' : '.env.dev' });
+const dotenv = require('dotenv').config({ path: process.env.pro ? '.env.pro' : '.env.dev' });
+const log = require('Debug')('app');
+
 log(process.env.pro ? chalk.red('Production Mode') : chalk.yellow('Development Mode'));
 
 //set secret
